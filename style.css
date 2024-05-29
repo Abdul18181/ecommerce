@@ -11,6 +11,9 @@ body{
     font-weight: 400;
     font-style: normal;
 }
+.card-text:nth-child(1){
+    font-size: 14px;
+}
 .nav-link{
     color: white;
     font-size: 15px;
@@ -50,7 +53,7 @@ header{
 }
 .nav1 .one ul li{
     list-style: none;
-    font-size: 12px;
+    font-size: 13px;
 }
 .nav1 .one ul li a{
     text-decoration: none;
@@ -344,7 +347,7 @@ border: none;
     object-fit: cover;
 }
 .flash-body .card .card-body .card-text:nth-child(1) {
-    font-size: 14px;
+    font-size: 13px;
 }
 .flash-body .card .card-body  del{
     font-size: 13px;
@@ -407,6 +410,234 @@ font-size: 13px;
     color: #f85606;
     bottom: 4px;
 }
+
+.foryou-cards .card .rating img{
+    height: 9px;
+    width: 9px;
+    border-radius: 0px;
+}
+.foryou-cards .card .rating {
+    display: flex;
+    align-items: start;
+    gap: 9px;
+}
+.foryou-cards .card .rating .number {
+    font-size: 13px;
+}
+
+
+
+
+@media screen and  (max-width:1030px) {
+    .card-fs-content-header {
+        display: flex;
+        flex-direction: row;
+        /* overflow: hidden;
+        w */
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border-bottom: #d5d5d5 1px solid;
+        height: 80px;
+        /* line-height: 60px; */
+        margin-bottom: 10px;
+    }
+    .card-fs-content-header-left{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 200px;
+    }
+    .fs-status-text{
+    
+        font-size: 30px;
+    }
+    
+    
+    #flash{
+        /* padding: 10px; */
+        width: 100%;
+    }   
+    .flash{
+        width: 90%;
+    }
+    
+    .card-fs-content-header-left-timer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* gap: 10px; */
+        height: 50px;
+        width: 160px;
+        align-items: center;
+        
+    }
+    .pull-left:nth-child(1){
+        font-size: 12px;
+        width: 80px;
+    }
+   .am{
+    line-height: 0;
+    width: 80px;
+    font-size: 10px;
+    background: transparent;
+   } 
+    .card-fs-content-header-left-timer #hours,
+    .card-fs-content-header-left-timer #minutes,
+    .card-fs-content-header-left-timer #seconds{
+        /* width: 50px; */
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        /* border-radius: 10px; */
+    }
+    
+    
+    .card-fs-content-button {
+        font-weight: 500;
+        font-size: 15px;
+        float: right;
+        display: block;
+        border: 1px solid #f85606;
+        border-radius: 2px;
+        color: #f85606;
+        height: 50px;
+        width: 130px;
+        font-size: 10px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        /* line-height: 35px; */
+        text-align: center;
+        /* padding-left: 10px; */
+        /* padding-right: 10px; */
+        /* margin-right: 11px; */
+        /* margin-top: 13px; */
+        text-decoration-line: none;
+    }
+    
+    .card-fs-content-header-left{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        left: 0;
+    }
+    .fs-status-text{
+        font-size: 10px;
+        line-height: 2px;
+width: 90px;
+    }
+    .card-fs-content-header-left-timer{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        right: 0;
+    }
+    #flash{
+        padding: 50px;
+    }
+    
+    .flash-body .card{
+        height: 22rem;
+        padding: none;
+    border: none;
+        border-radius: 0px;
+    }
+    .flash-body .card:hover{
+        box-shadow: 0px 0px 10px 2px rgba(128, 128, 128, 0.466);
+    }
+    .flash-body .card img{
+        height: 30vh;
+        width: 100%;
+        object-fit: cover;
+    }
+    .flash-body .card .card-body .card-text:nth-child(1) {
+        font-size: 14px;
+    }
+    .flash-body .card .card-body  del{
+        font-size: 13px;
+        color: rgb(180, 180, 180);
+    }
+    .flash-body .card .card-body span{
+        position: relative;
+    left: 10px;
+    font-size: 13px;
+    }
+    .flash-body .card .card-body .text{
+        font-size: 20px;
+        position: relative;
+        left: -1px;
+        color: #f85606;
+        bottom: 4px;
+    }
+    .flash-body .card{
+        height: 26rem;
+        padding: none;
+    border: none;
+        border-radius: 0px;
+    }
+    .flash-body .card:hover{
+        box-shadow: 0px 0px 10px 2px rgba(128, 128, 128, 0.466);
+    }      
+
+
+    
+
+#foryou{
+    padding: 20px;
+}
+.foryou-button{
+    position: relative;
+    /* bottom: -120px; */
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foryou-button button{
+    height: 50px;
+    width: 33%;
+    background: transparent;
+    color: #f85606;
+    border: 2px solid  #f85606;
+font-size: 16px;
+}
+.foryou-cards .card img{
+    height: 250px;
+    object-fit: cover;
+}
+.foryou-cards .card{
+    height: 36em;
+    border-radius: 0px;
+    border: none;
+} 
+
+
+
+
+.foryou-cards .card .card-body  del{
+    font-size: 13px;
+    color: rgb(180, 180, 180);
+}
+.foryou-cards .card .card-body span{
+    position: relative;
+left: 10px;
+font-size: 13px;
+}
+.foryou-cards .card .card-body .text{
+    font-size: 20px;
+    position: relative;
+    left: -1px;
+    color: #f85606;
+    bottom: 4px;
+}
 .foryou-cards .card .rating img{
     height: 9px;
     width: 9px;
@@ -420,6 +651,22 @@ font-size: 13px;
 .foryou-cards .card .rating .number {
     font-size: 14px;
 }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -589,10 +836,12 @@ width: 90px;
     
 
 #foryou{
-    padding: 40px;
+    padding: 20px;
 }
 .foryou-button{
-    height: 150px;
+    position: relative;
+    /* bottom: -120px; */
+    height: 100px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -606,8 +855,12 @@ width: 90px;
     border: 2px solid  #f85606;
 font-size: 16px;
 }
+.foryou-cards .card img{
+    height: 250px;
+    object-fit: cover;
+}
 .foryou-cards .card{
-    height: 30em;
+    height: 36em;
     border-radius: 0px;
     border: none;
 } 
@@ -896,4 +1149,330 @@ font-size: 13px;
 
 
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:870px) {
+    .card-fs-content-header {
+        display: flex;
+        flex-direction: row;
+        /* overflow: hidden;
+        w */
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border-bottom: #d5d5d5 1px solid;
+        height: 80px;
+        /* line-height: 60px; */
+        margin-bottom: 10px;
+    }
+    .card-fs-content-header-left{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 200px;
+    }
+    .fs-status-text{
+    
+        font-size: 16px;
+    }
+    
+    
+    #flash{
+        /* padding: 10px; */
+        width: 100%;
+    }   
+    .flash{
+        width: 90%;
+    }
+    
+    .card-fs-content-header-left-timer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* gap: 10px; */
+        height: 50px;
+        width: 160px;
+        align-items: center;
+        
+    }
+    .pull-left:nth-child(1){
+        font-size: 12px;
+        width: 80px;
+    }
+   .am{
+    line-height: 0;
+    width: 80px;
+    font-size: 10px;
+    background: transparent;
+   } 
+    .card-fs-content-header-left-timer #hours,
+    .card-fs-content-header-left-timer #minutes,
+    .card-fs-content-header-left-timer #seconds{
+        /* width: 50px; */
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        /* border-radius: 10px; */
+    }
+    
+    
+    .card-fs-content-button {
+        font-weight: 500;
+        font-size: 12px;
+        float: right;
+        display: block;
+        border: 1px solid #f85606;
+        border-radius: 2px;
+        color: #f85606;
+        height: 50px;
+        width: 100px;
+        font-size: 10px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        /* line-height: 35px; */
+        text-align: center;
+        /* padding-left: 10px; */
+        /* padding-right: 10px; */
+        /* margin-right: 11px; */
+        /* margin-top: 13px; */
+        text-decoration-line: none;
+    }
+    
+    .card-fs-content-header-left{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        left: 0;
+    }
+    .fs-status-text{
+        font-size: 10px;
+        line-height: 2px;
+width: 90px;
+    }
+    .card-fs-content-header-left-timer{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        right: 0;
+    }
+    #flash{
+        padding: 50px;
+    }
+    
+    .flash-body .card{
+        height: 20rem;
+        width: 100%;
+        padding: none;
+    border: none;
+        border-radius: 0px;
+    }
+    .flash-body .card:hover{
+        box-shadow: 0px 0px 10px 2px rgba(128, 128, 128, 0.466);
+    }
+    .flash-body .card img{
+        height: 30vh;
+        width: 100%;
+        object-fit: cover;
+    }
+    .flash-body .card .card-body .card-text:nth-child(1) {
+        font-size: 14px;
+    }
+    .flash-body .card .card-body  del{
+        font-size: 13px;
+        color: rgb(180, 180, 180);
+    }
+    .flash-body .card .card-body span{
+        position: relative;
+    left: 10px;
+    font-size: 13px;
+    }
+    .flash-body .card .card-body .text{
+        font-size: 20px;
+        position: relative;
+        left: -1px;
+        color: #f85606;
+        bottom: 4px;
+    }
+    .flash-body .card{
+        height: 26rem;
+        padding: none;
+    border: none;
+        border-radius: 0px;
+    }
+    .flash-body .card:hover{
+        box-shadow: 0px 0px 10px 2px rgba(128, 128, 128, 0.466);
+    }      
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+#foryou{
+    padding: 40px;
+}
+.foryou-button{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foryou-button button{
+    height: 50px;
+    width:300px;
+    background: transparent;
+    color: #f85606;
+    border: 2px solid  #f85606;
+font-size: 14px;
+}
+.foryou-cards .card{
+    height: 30em;
+    border-radius: 0px;
+    border: none;
+} 
+
+
+
+
+.foryou-cards .card .card-body  del{
+    font-size: 13px;
+    color: rgb(180, 180, 180);
+}
+.foryou-cards .card .card-body span{
+    position: relative;
+left: 10px;
+font-size: 13px;
+}
+.foryou-cards .card .card-body .text{
+    font-size: 20px;
+    position: relative;
+    left: -1px;
+    color: #f85606;
+    bottom: 4px;
+}
+.foryou-cards .card .rating img{
+    height: 9px;
+    width: 9px;
+    border-radius: 0px;
+}
+.foryou-cards .card .rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+}
+.foryou-cards .card .rating .number {
+    font-size: 12px;
+    color: rgba(128, 128, 128, 0.479);
+}   
+}
+
+.foryou-cards .card .rating .number {
+    font-size: 12px;
+    color: rgba(128, 128, 128, 0.479);
+}
+
+
+
+
+
+
+
+footer h5{
+    color: rgb(248,86,83);
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card:hover{
+    box-shadow: 0px 0px 10px 4px rgba(128, 128, 128, 0.288);
 }
