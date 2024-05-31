@@ -79,7 +79,7 @@ header{
 }
 .nav1 .two ul li a img{
     margin-right: 10px;
-    height: 30px;
+    height: 25px;
 }
 .nav1 .two ul li{
     background-color: rgb(173,60,4);
@@ -98,6 +98,7 @@ header.active{
     position: fixed;
     top: 0;
 z-index: 999;
+padding-bottom: 5px;
 }
 .mlt{
     
@@ -114,12 +115,12 @@ z-index: 999;
   
 }
 .fa-user{
- font-size: 25px;
+ font-size: 18px;
     color: white;
 }
 .fa-globe{
     color: white;
-    font-size: 25px;
+    font-size: 20px;
 }
 .csp{
     width: 95%;
@@ -197,11 +198,7 @@ border-radius:10px;
     align-items: center;
     }
 }
-@media screen and (max-width:1100px){
-    .nav1{
-    display: none;
-    }
-    }
+
 .navbar-toggler{
     /* color: white; */
     background-color: white;
@@ -333,7 +330,7 @@ border-radius:10px;
 }
 
 .flash-body .card{
-    height: 22rem;
+    height: 21rem;
     padding: none;
 border: none;
     border-radius: 0px;
@@ -386,7 +383,7 @@ font-size: 13px;
 font-size: 20px;
 }
 .foryou-cards .card{
-    height: 24.5em;
+    height: 22.5em;
     border-radius: 0px;
     border: none;
 } 
@@ -675,6 +672,12 @@ font-size: 13px;
 
 
 @media screen and  (max-width:600px) {
+    .flash-body .card{
+        height: 10rem;
+        padding: none;
+    border: none;
+        border-radius: 0px;
+    }
     .card-fs-content-header {
         display: flex;
         flex-direction: row;
@@ -1156,30 +1159,6 @@ font-size: 13px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width:870px) {
     .card-fs-content-header {
         display: flex;
@@ -1212,7 +1191,8 @@ font-size: 13px;
         width: 100%;
     }   
     .flash{
-        width: 90%;
+       
+          width: 90%;
     }
     
     .card-fs-content-header-left-timer{
@@ -1343,13 +1323,6 @@ width: 90px;
 
 
 
-
-
-
-
-
-
-
     
 
 #foryou{
@@ -1403,7 +1376,7 @@ font-size: 13px;
 .foryou-cards .card .rating {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 9px;
 }
 .foryou-cards .card .rating .number {
@@ -1434,45 +1407,86 @@ footer h5{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .card:hover{
     box-shadow: 0px 0px 10px 4px rgba(128, 128, 128, 0.288);
+}
+
+
+
+
+@media screen and ( max-width:600px){
+.flash-head .fs-status-text{
+    font-size: 17px;
+    line-height: 30px;
+    display: flex;
+    width: 300px;
+}
+
+    .flash-body .card{
+    height: 20em;
+}
+    .foryou-heading{
+    margin-bottom: 30px;
+}
+    .foryou-cards .card{
+        height: 26em;
+        border-radius: 0px;
+        border: none;
+    } 
+    
+    
+}
+
+
+
+
+
+
+
+
+
+/*footer*/
+.foot-sn{
+    height: 30px;
+    width: 30px;
+}
+
+.foot-sn img{
+    height: 30px;
+    width: 30px;
+}
+.dss img{
+    height: 50px;
+}
+
+footer a:hover{
+    text-decoration-line: underline;
+    text-decoration-color:black ;
+}
+.footer2{
+h5{
+    font-size: 20px;
+    font-weight: 600;
+    color: gray;
+    line-height: 30px;
+}
+span small{
+    font-size: 11px;
+    font-weight: 400;color: rgba(128, 128, 128, 0.692);
+}
+span a{
+    font-size: 11px;
+    font-weight: 400;color: rgba(128, 128, 128, 0.692);
+    text-decoration: none;
+}
+span a:hover{
+    text-decoration-line: underline
+    ;
+    text-decoration-color: black;
+    text-decoration-style: solid;
+}
+span {
+    font-size: 11px;
+    font-weight: 400;color: rgba(128, 128, 128, 0.692);
+}
 }
