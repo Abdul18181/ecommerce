@@ -563,7 +563,7 @@ background: transparent;
     height: 200px;
     display: flex;
     justify-content: center;
-  object-fit: fill;
+
 }
 .carousel-control-prev{
     display: flex;
