@@ -23,6 +23,9 @@ color: white;
     font-size: 15px;
 }
 header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: auto;
     width: 100%;
     background-color: rgb(248,86,6);
@@ -30,6 +33,7 @@ header{
 .containers{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     width: 100%;
 }
 .navbar-brand img{
@@ -37,76 +41,12 @@ header{
     width: 100px;
     object-fit: contain;
 }
-.nav1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 55px;
-    /* display: none; */
-}
-.nav1 .one{
-    display: flex;
-    
-}
-.nav1 .one ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
-}
-.nav1 .one ul li{
-    list-style: none;
-    font-size: 13px;
-}
-.nav1 .one ul li a{
-    text-decoration: none;
-    color: white;
-}
 
-.nav1 .two{
-    display: flex;
-    
-}
-.nav1 .two ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.nav1 .two ul li{
-    list-style: none;
-}
-.nav1 .two ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 13px;
-}
-.nav1 .two ul li a img{
-    margin-right: 10px;
-    height: 25px;
-}
-.nav1 .two ul li{
-    background-color: rgb(173,60,4);
-    height: 44px;
-    padding: 10px;
-    border-radius: 0px 0px 10px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav1.active-nav{
-    display: none;
-}
 header.active{
     position: fixed;
     top: 0;
 z-index: 999;
 padding-bottom: 5px;
-}
-.mlt{
-    
-    margin-left: 0px;
 }
 
 .mlt .nav-item{
@@ -129,13 +69,13 @@ padding-bottom: 5px;
 .csp{
     width: 95%;
 }
-.cs{
-    width: 95%;
+.navbar{
+    width: 94%;
 }
  
 .cs-form{
     position: relative;
-    width: 90%;
+    width: 100%;
     margin: 0px 0px 0px 14px;
 display: flex;
 justify-content: center;
@@ -149,7 +89,7 @@ align-items: center;
 
 .cs-btn{
     position: absolute;
-    right: 15px;
+    right:20px;
     height: 33px;
     width: 50px;
     border: none;
@@ -158,11 +98,11 @@ align-items: center;
     align-items: center;
     background-color:rgb(255,225,210)
 ;
-color: black;
+color: rgb(158, 156, 156);
 border-radius:10px;
-}
+} 
 .cs-btn:hover{
-    color: black;
+    color: rgb(124, 124, 124);
     background-color:rgb(255,225,210)
     ;
 }
@@ -343,7 +283,7 @@ font-weight: 400;
     height: 21rem;
     padding: none;
     
-    
+padding: 10px;    
 border: none;
     border-radius: 0px;
 }
@@ -353,7 +293,7 @@ border: none;
 .flash-body .card img{
     height: 29vh;
     width: 100%;
-    object-fit: cover;
+
 }
 .flash-body .card .card-body .card-text:nth-child(1) {
     font-size: 13px;
@@ -385,7 +325,7 @@ align-items: center;
 }
 .foryou{
  
-    background-color: #f85606;
+   
 width: 92%;
 }
 .foryou-button{
@@ -404,7 +344,7 @@ width: 92%;
 font-size:18px;
 }
 .foryou-cards .card{
-    height: 22.5em;
+    height: 23.5em;
     border-radius: 0px;
     border: none;
 } 
@@ -458,6 +398,9 @@ font-size: 13px;
 }
 
 @media screen and  (max-width:1030px) {
+    .flash{
+        width: 100%;
+    }
     .card-fs-content-header {
         display: flex;
         flex-direction: row;
@@ -542,7 +485,7 @@ width: 90px;
     }
     
     .flash-body .card{
-        height: 22rem;
+        height: 24.5rem;
         padding: none;
     border: none;
         border-radius: 0px;
@@ -612,7 +555,7 @@ font-size: 16px;
     object-fit: cover;
 }
 .foryou-cards .card{
-    height: 36em;
+    height: 25em;
     border-radius: 0px;
     border: none;
 } 
@@ -746,6 +689,7 @@ font-size: 13px;
     }
     
     
+    
     .card-fs-content-button {
         font-weight: 500;
         font-size: 12px;
@@ -827,7 +771,7 @@ width: 90px;
         bottom: 4px;
     }
     .flash-body .card{
-        height: 26rem;
+        height: 24rem;
         padding: none;
     border: none;
         border-radius: 0px;
@@ -861,12 +805,13 @@ font-size: 16px;
 }
 .foryou-cards .card img{
     height: 250px;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 .foryou-cards .card{
     height: 36em;
     border-radius: 0px;
     border: none;
+padding: 10px;
 } 
 
 
@@ -1111,7 +1056,7 @@ width: 90px;
 font-size: 14px;
 }
 .foryou-cards .card{
-    height: 26em;
+    height: 23em;
     border-radius: 0px;
     border: none;
 } 
@@ -1577,8 +1522,8 @@ width: 100%;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    height: 350px;
-    padding: 5px;
+    height: auto;
+    padding: 10px;
 }
 .first .first_nav_links{
     display: flex;
@@ -2209,8 +2154,8 @@ justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
         width: 100%;
-        height: 350px;
-        padding: 5px;
+        height: auto;
+        padding: 10px;
     }
     .first .first_nav_links{
         display: flex;
@@ -2435,3 +2380,33 @@ justify-content: space-between;
     /* flex-direction: column; */
     }
     } 
+
+
+
+
+
+
+
+
+footer{
+    .daraz-international{
+        li{
+            list-style: none;
+        }
+    }
+}
+
+
+    @media screen and (max-width: 567px) {
+        .sec {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 197px;
+            width: 100%;
+        }
+    }
+
+    .footer2{
+        width: 92%;
+    }
